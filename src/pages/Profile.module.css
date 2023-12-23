@@ -1,0 +1,141 @@
+.topText{
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    width: 90%;
+    padding: .4rem 1rem;
+    
+}
+.quote{
+  background-color: #f8f8f8;
+  border-left: 4px solid #007bff; /* Change color to your preference */
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(121, 119, 119, 0.7);
+  font-size: 1.5rem;
+  color: #333; /* Change color to your preference */
+  margin-bottom: 10px;
+}
+.profileInfo{
+    background-color: #b1a9a9;
+    border-radius: 10%;
+    padding: 10px 1rem;
+    width: 450px;
+    height: fit-content;
+}
+.profileInfo a{
+   text-decoration: none; 
+}
+.profile-form-container {
+    width: 70%;
+    margin: 3rem auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 3px 2px 4px rgba(32, 32, 32, 0.5);
+    background-color: #ffffff;
+  }
+  
+  .title {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+  .inputs{
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-container {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    width: 70%;   
+  }
+  
+  .input {
+    width: 400px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 25%;
+    margin-bottom: 1.5%;
+  }
+  
+  .update-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+  }
+  
+  .update-button:hover {
+    background-color: #0056b3;
+    box-shadow: 2px 3px 4px #03264d;
+  }
+  .cancel-button{
+    background-color: #e05757;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    margin-left: 1rem;
+  }
+  .cancel-button:hover {
+    background-color: #cc3131;
+    box-shadow: 2px 3px 4px #771e1e;
+  }
+
+  @media (max-width: 768px) {
+    .topText {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .profileInfo {
+      width: 100%;
+      margin-top: 1rem;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .profileInfo a {
+      display: block;
+      margin-top: 0.5rem;
+    }
+  
+    .profile-form-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .input-container {
+      flex-direction: column;
+    }
+  
+    .input {
+      width: 100%;
+      position: static;
+      right: 0;
+    }
+  
+    .update-button,
+    .cancel-button {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }

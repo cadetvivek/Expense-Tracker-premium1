@@ -1,0 +1,92 @@
+.expenseList {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+    background-color: #f5f5f5;
+  }
+  .expenseList p{
+    display: inline-block; 
+    position: relative;
+    top: 4px;
+  }
+  .expenseList h2 {
+    margin-bottom: 10px;
+  }
+  
+  .expenseItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  } 
+  .expenseCategory,
+  .expenseDescription {
+    flex: 1;
+  }
+  .expenseAmount {
+    flex: 0.3;
+    text-align: right;
+    font-weight: bold;
+    color: #007bff;
+  }
+  .editBtn, .deleteBtn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .editBtn{
+    background-color: #3498db;
+  color: #fff;
+  margin-left: 1rem;
+  }
+  .editBtn:hover{
+    background-color: #2980b9;
+    box-shadow: 2px 3px 4px #114161;
+  }
+.deleteBtn{
+  background-color: #e74c3c;
+  color: #fff;
+  margin-left: 10px;
+}
+.deleteBtn:hover{
+  background-color: #c0392b;
+  box-shadow: 2px 3px 4px #7c1e13;
+}
+
+@media (max-width: 600px) {
+  .expenseList {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .expenseItem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .expenseAmount {
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  .editBtn,
+  .deleteBtn {
+    margin-top: 10px;
+    margin-left: 0; 
+    width: 100%;
+  }
+}
+
+  

@@ -1,0 +1,110 @@
+
+.navbar {
+  position: sticky;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbarTitle {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  .expenseSign{
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  .navbarNav {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    display: flex;
+    font-size: 1.1rem;
+    width: 4.2rem;
+    max-height: 1.7rem;
+    margin-right: 1.5rem;
+  }
+  .navLink {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    opacity: 0.8;
+   
+  }
+.navLink p{
+  text-align: center;
+  margin-right: 10px;
+  position: relative;
+  margin-top: 10px;
+  bottom: 8px;
+}
+  .navLink:hover {
+    box-shadow: 2px 3px 4px #fff;
+    opacity: 1;
+  }
+  .navbarNav button{
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+.hamburgerButton{
+    height: 1.8rem;
+    width: 2.5rem;
+    opacity: 0;
+}
+
+  @media (max-width: 750px) {
+    .hamburgerButton{
+        opacity: 1;
+    }
+    .hamburgerIcon{
+        text-align: center;
+        font-size: 30px;
+    }
+    .navbarNav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust this value as needed */
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      z-index: 1;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbarNav.active {
+      display: flex;
+    }
+  
+    .navItem {
+      font-size: 16px;
+      padding: 10px 20px;
+      text-align: center;
+    }
+  
+    .navLink {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+  
+    .navLink:hover {
+      color: #f0f0f0;
+    }
+  }

@@ -1,0 +1,120 @@
+.expenseForm {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    background-color: #f5f5f5;
+  }
+  .formHeader{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .formHeader h2 {
+    margin-bottom: 10px;
+  }
+  
+  .expenseForm form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .expenseForm input,
+  .expenseForm select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .submitBtn{
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 80%;
+    margin: 0 auto;
+    height: 2.6rem;
+    font-size: 1.5rem;
+  }
+.submitBtn:hover{
+    background-color: #045cb9;
+    box-shadow: 3px 4px 5px #01356b;
+  }
+  .premiumBtn{
+    background-color: #d8d64c;
+    color: #333;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-left: 78%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    opacity:0.8;
+  }
+  .premiumBtn:hover{
+    background-color: #ece91a;
+    box-shadow: 2px 3px 4px #aaa830;
+    opacity: 1;
+  }
+  .csvBtn{
+    background-color: #3594fa;
+    margin-top: 1rem;
+    margin-left: 68%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .csvBtn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  .csvBtn:hover{
+    background-color: #096cd6;
+    box-shadow: 2px 3px 4px #023a75;
+  }
+  .themeBtn{
+    display: inline-block;
+    background-color: #62676d;
+    color: #ccc;
+    margin-bottom: 2rem;
+    width: 7rem;
+    height: 2.5rem;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  @media (max-width: 600px) {
+    .expenseForm {
+      width: 90%; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .formHeader {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .premiumBtn,
+    .csvBtn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
